@@ -16,7 +16,7 @@ public class ComparatorInterfaceExa {
 
 	public static void main(String args[]) {
 		// Creating a list of ComparatorInterfaceExas  
-		ArrayList < ComparatorInterfaceExa > list = new ArrayList < ComparatorInterfaceExa > ();
+		ArrayList <ComparatorInterfaceExa> list = new ArrayList <ComparatorInterfaceExa> ();
 		list.add(new ComparatorInterfaceExa(101, "Deep", 19));
 		list.add(new ComparatorInterfaceExa(103, "Jeet", 21));
 		list.add(new ComparatorInterfaceExa(102, "Jaivik", 20));
@@ -37,7 +37,7 @@ public class ComparatorInterfaceExa {
 		Collections.sort(list, new AgeComparator());
 
 		// Travering the list again  
-		for (ComparatorInterfaceExa comparatorExa: list) {
+		for (ComparatorInterfaceExa comparatorExa : list) {
 			System.out.println(comparatorExa.rollno + " " + comparatorExa.name + " " + comparatorExa.age);
 		}
 	}

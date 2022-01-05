@@ -27,7 +27,7 @@ public class ComparableExa implements Comparable<ComparableExa> {
 
 	public static void main(String args[]) {
 		// Create ArrayList and add values in list
-		ArrayList < ComparableExa > comparableList = new ArrayList < ComparableExa > ();
+		ArrayList <ComparableExa> comparableList = new ArrayList <ComparableExa> ();
 		comparableList.add(new ComparableExa(101, "Deep", 19));
 		comparableList.add(new ComparableExa(103, "Jeet", 21));
 		comparableList.add(new ComparableExa(102, "Jaivik", 20));
