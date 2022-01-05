@@ -25,17 +25,17 @@ public class ComparatorInterfaceExa {
 		System.out.println("Sorting by Name");
 		// Using NameComparator to sort the elements  
 		Collections.sort(list, new NameComparator());
-		
+
 		// Traversing the elements of list  
 		for (ComparatorInterfaceExa comparatorExa : list) {
 			System.out.println(comparatorExa.rollno + " " + comparatorExa.name + " " + comparatorExa.age);
 		}
-		
+
 		System.out.println();
 		System.out.println("Sorting by Age");
 		// Using AgeComparator to sort the elements  
 		Collections.sort(list, new AgeComparator());
-		
+
 		// Travering the list again  
 		for (ComparatorInterfaceExa comparatorExa: list) {
 			System.out.println(comparatorExa.rollno + " " + comparatorExa.name + " " + comparatorExa.age);
@@ -57,7 +57,7 @@ class AgeComparator implements Comparator < ComparatorInterfaceExa > {
 			return -1;
 		}
 	}
-	
+
 }
 
 // Class implements interface Comparator

@@ -50,4 +50,3 @@ public class ExceptionHandlingExa extends Exception {
 	}
 
 }
-

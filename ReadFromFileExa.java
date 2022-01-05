@@ -9,13 +9,13 @@ public class ReadFromFileExa {
 		try {
 			File readFile = new File("D:/Work/myTestFile.txt");
 			Scanner dataReader = new Scanner(readFile);
-			
+
 			while (dataReader.hasNextLine()) {
 				String fileData = dataReader.nextLine();
 				System.out.println(fileData);
 			}
 			System.out.println();
-			
+
 			// Get the length of the file
 			System.out.println("length of data: " + readFile.length());
 

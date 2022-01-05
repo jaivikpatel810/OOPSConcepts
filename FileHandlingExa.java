@@ -8,7 +8,7 @@ public class FileHandlingExa {
 		try {
 			// Create a new empty file
 			File newFile = new File("D:/Work/myTestFile.txt");
-			
+
 			if (newFile.createNewFile()) { 
 				System.out.println("File " + newFile.getName() + " is created successfully.");
 			} else {  
@@ -18,7 +18,7 @@ public class FileHandlingExa {
 			// Write in the file
 			FileWriter fwrite = new FileWriter("D:/Work/myTestFile.txt");
 			fwrite.write("Hey, I am Jaivik Patel. I am a MSc(CA & IT) student. Currently I am working as Jr. Java Developer. I am living in Ahmedabad.");
-			
+
 			// Close the object
 			fwrite.close();
 			System.out.println("Details are successfully written in file.");

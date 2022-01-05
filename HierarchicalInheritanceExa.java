@@ -30,6 +30,7 @@ public class HierarchicalInheritanceExa {
 	}
 
 }
+
 // Derive class inheritate base class
 class Hier extends HierarchicalInheritanceExa {
 

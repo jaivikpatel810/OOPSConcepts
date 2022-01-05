@@ -6,10 +6,10 @@ import java.util.*;
 public class CollectionIteratorExa {  
 
 	public static void main(String[] args) {  
-	// List of Array string
+		// List of Array string
 		ArrayList<String> myDetails = new ArrayList<String> ();
 
-	// Add values in Arraylist
+		// Add values in Arraylist
 		myDetails.add("Hello");  
 		myDetails.add("World");  
 		myDetails.add("Jaivik");  
@@ -21,8 +21,9 @@ public class CollectionIteratorExa {
 
 		System.out.println("Details elements : ");  
 
-		while (iterator.hasNext())   
-				System.out.println(iterator.next() + " ");  
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next() + " ");  
+		}
 
 		System.out.println();  
 	}
