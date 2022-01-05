@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class ReadFromFileExa {
-	
+
 	public static void main(String args[]) {
 		try {
 			File readFile = new File("D:/Work/myTestFile.txt");
@@ -18,7 +18,7 @@ public class ReadFromFileExa {
 			
 			// Get the length of the file
 			System.out.println("length of data: " + readFile.length());
-						
+
 			//Split read data by string handling
 			ArrayList<String> splitData = new ArrayList<>();
 			BufferedReader dataRead = new BufferedReader(new FileReader("D:/Work/myTestFile.txt"));
@@ -28,12 +28,12 @@ public class ReadFromFileExa {
 				splitData.add(Arrays.toString(splitString));
 				System.out.println(splitData);
 			}
-			
+
 			// Close the FileReader object
 			dataReader.close();
 		} catch (IOException exception) {
 			System.out.println(exception);
 		}
 	}
-	
+
 }

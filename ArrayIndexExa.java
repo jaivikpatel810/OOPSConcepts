@@ -3,7 +3,7 @@
 import java.util.*;
 
 public class ArrayIndexExa {
-	
+
 	// Search function to find the index of an element
 	public static int findIndex(int array[], int value) {
 		// If array is Null
@@ -32,16 +32,16 @@ public class ArrayIndexExa {
 		int numberOfElement = scanner.nextInt();  
 		// Create an array 
 		int[] enterArray = new int[10];  
-		
+
 		System.out.println("Enter the elements of the array: ");  
 		for (int i = 0; i < numberOfElement; i++) {     
 			enterArray[i] = scanner.nextInt();  
 		}  
-		
+
 		System.out.println("Enter element you want to find: ");
 		int find = scanner.nextInt();
 		// Find the index of enter element
 		System.out.println("Index position of " + find + " is: " + findIndex(enterArray, find));
 	}
-	
+
 }

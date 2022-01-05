@@ -3,11 +3,11 @@
 import java.util.*;
 
 public class ExceptionHandlingExa extends Exception {
-	
+
 	public ExceptionHandlingExa(String message) {
 		super(message);
 	}
-	
+
 	// Method that directly throws exception and handle it
 	public void show() throws Exception {
 		int number1 = 40;
@@ -15,12 +15,12 @@ public class ExceptionHandlingExa extends Exception {
 		float division = number1 / number2;
 		System.out.println("Division is :" + division);
 	}
-	
+
 	public static void main(String args[]) throws Exception {
 		// Create object and call method
 		ExceptionHandlingExa exceptionHandling = new ExceptionHandlingExa("Error:Age must be more than 0");
 		exceptionHandling.show();
-		
+
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter age :");
 		int age = scanner.nextInt();
@@ -48,6 +48,6 @@ public class ExceptionHandlingExa extends Exception {
 			System.out.println("Success.");
 		}
 	}
-	
+
 }
 

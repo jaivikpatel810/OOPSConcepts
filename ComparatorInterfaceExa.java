@@ -4,16 +4,16 @@ import java.util.*;
 import java.io.*;
 
 public class ComparatorInterfaceExa {
-    
-	int rollno, age;
-    String name;
 
-    public ComparatorInterfaceExa(int rollno, String name, int age) {
-        this.rollno = rollno;
-        this.name = name;
-        this.age = age;    
+	int rollno, age;
+	String name;
+
+	public ComparatorInterfaceExa(int rollno, String name, int age) {
+		this.rollno = rollno;
+		this.name = name;
+		this.age = age;    
 	}
-	
+
 	public static void main(String args[]) {
 		// Creating a list of ComparatorInterfaceExas  
 		ArrayList < ComparatorInterfaceExa > list = new ArrayList < ComparatorInterfaceExa > ();
@@ -41,29 +41,31 @@ public class ComparatorInterfaceExa {
 			System.out.println(comparatorExa.rollno + " " + comparatorExa.name + " " + comparatorExa.age);
 		}
 	}
-	
+
 }
+
 // Class implements interface Comparator
 class AgeComparator implements Comparator < ComparatorInterfaceExa > {
-	
+
 	// Comparision of age for sorting
-    public int compare(ComparatorInterfaceExa comparatorInterfaceExa1, ComparatorInterfaceExa comparatorInterfaceExa2) {
-        if (comparatorInterfaceExa1.age == comparatorInterfaceExa2.age) {
-            return 0;
-        } else if (comparatorInterfaceExa1.age > comparatorInterfaceExa2.age) {
-            return 1;
-        } else {
-            return -1;
+	public int compare(ComparatorInterfaceExa comparatorInterfaceExa1, ComparatorInterfaceExa comparatorInterfaceExa2) {
+		if (comparatorInterfaceExa1.age == comparatorInterfaceExa2.age) {
+			return 0;
+		} else if (comparatorInterfaceExa1.age > comparatorInterfaceExa2.age) {
+			return 1;
+		} else {
+			return -1;
 		}
-    }
+	}
 	
 }
+
 // Class implements interface Comparator
 class NameComparator implements Comparator < ComparatorInterfaceExa > {
-    
+
 	// Comparision of name for sorting
 	public int compare(ComparatorInterfaceExa comparatorInterfaceExa1, ComparatorInterfaceExa comparatorInterfaceExa2) {
-        return comparatorInterfaceExa1.name.compareTo(comparatorInterfaceExa2.name);
-    }
+		return comparatorInterfaceExa1.name.compareTo(comparatorInterfaceExa2.name);
+	}
 
 }

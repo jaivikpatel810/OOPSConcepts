@@ -3,17 +3,17 @@
 import java.io.*;
 
 public class FileHandlingExa {
-	
+
 	public static void main(String args[]) {
 		try {
 			// Create a new empty file
 			File newFile = new File("D:/Work/myTestFile.txt");
 			
 			if (newFile.createNewFile()) { 
-				System.out.println("File " + newFile.getName() + " is created successfully.");  
-            } else {  
-                System.out.println("File is already exist in the directory.");  
-            }
+				System.out.println("File " + newFile.getName() + " is created successfully.");
+			} else {  
+				System.out.println("File is already exist in the directory.");  
+			}
 
 			// Write in the file
 			FileWriter fwrite = new FileWriter("D:/Work/myTestFile.txt");
@@ -27,4 +27,4 @@ public class FileHandlingExa {
 		}
 	}
 
-} 
+}
