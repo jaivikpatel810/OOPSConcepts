@@ -5,8 +5,7 @@ import java.util.*;
 public class ArrayIndexExa {
 	
 	// Search function to find the index of an element
-	public static int findIndex(int array[], int value)
-	{
+	public static int findIndex(int array[], int value) {
 		// If array is Null
 		if (array == null) {
 			return -1;
