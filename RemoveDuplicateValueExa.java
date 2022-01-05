@@ -10,7 +10,7 @@ public class RemoveDuplicateValueExa {
 		LinkedHashSet<Character> set = new LinkedHashSet<>();
 
 		// Add each character of the string into LinkedHashSet
-		for (int i=0; i<string.length(); i++) {
+		for (int i = 0; i<string.length(); i++) {
 			set.add(string.charAt(i));   
 		}
 
